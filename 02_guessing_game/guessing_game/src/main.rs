@@ -19,7 +19,7 @@ fn main() {
         io::stdin().read_line(&mut guess)
         .expect("Failed to read line");
     
-        let guess: u32 = match guess.trim().parse() {
+        let guess: u32 = match guess.trim().parse() { //trim 으로 공백 제거 후 parse 로 숫자로 변환
             Ok(num) => num,
             Err(_) => continue,
         };
